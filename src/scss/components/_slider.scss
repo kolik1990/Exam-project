@@ -1,0 +1,97 @@
+.slider {
+  background-color: $color_title;
+  padding: 138px 0 140px 0;
+  &_wrap {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    align-items: center;
+    grid-template-areas: "subtitle button" "title button";
+    margin-bottom: 43px;
+  }
+  &_subtitle {
+    grid-area: subtitle;
+  }
+  &_title {
+    grid-area: title;
+    color: $bg_color;
+    line-height: 66px;
+  }
+  &_btn {
+    margin: 47px 0 0 24px;
+    grid-area: button;
+    width: 267px;
+    height: 82px;
+    background-color: $color_btn--yellow;
+    &_text {
+      margin-left: 36px;
+    }
+
+    transition: all 1s ease;
+    &:hover {
+      background-color: $color_hover;
+    }
+    & div {
+      margin: 0 0 1px 25px;
+    }
+  }
+  &_carousel {
+    display: flex;
+    justify-content: flex-end;
+    gap: 19px;
+    margin-bottom: 20px;
+    position: relative;
+    &_input {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 48%;
+      right: 3px;
+      z-index: 20000;
+      opacity: 0;
+      cursor: pointer;
+      &:checked + .slider_items {
+        opacity: 0;
+      }
+      &:checked ~ .slider_items--second {
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+      }
+    }
+  }
+  &_arrow {
+    width: 55px;
+    height: 55px;
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 48%;
+    left: 0px;
+    cursor: pointer;
+    z-index: 15000;
+    &-right {
+      position: absolute;
+      top: 48%;
+      right: 0px;
+      width: 55px;
+      height: 55px;
+    }
+  }
+  &_items {
+    position: relative;
+    display: flex;
+    gap: 19px;
+    &--second {
+      display: none;
+      gap: 19px;
+      width: 1379px;
+    }
+  }
+  &_item {
+    width: 387px;
+    height: 527px;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 0 0 15px rgba(256, 256, 256, 0.9);
+    }
+  }
+}

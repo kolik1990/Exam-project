@@ -1,0 +1,17 @@
+.products {
+  padding: 157px 0 142px 0;
+  &_subtitle {
+    text-align: center;
+  }
+  &_title {
+    text-align: center;
+    color: $color_title;
+    margin-bottom: 3px;
+  }
+}
+.products_cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1f 1f;
+  gap: 20px;
+}

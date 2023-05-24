@@ -1,0 +1,364 @@
+@media (max-width: 1372px) {
+  .cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .slider_carousel {
+    justify-content: center;
+  }
+  .slider_carousel_input:checked ~ .slider_items--second {
+    justify-content: center;
+  }
+  .slider_item {
+    max-width: 330px;
+    max-height: 500px;
+  }
+  .footer_subscribe_img {
+    width: 100%;
+  }
+  .footer > iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .header_wrap {
+    position: relative;
+  }
+  .nav {
+    display: none;
+    & > .menu {
+      flex-direction: column;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: $bg_color;
+      opacity: 0.9;
+      z-index: 30000;
+      min-width: 200px;
+      height: 100%;
+      text-align: center;
+    }
+  }
+  .header_btn {
+    display: none;
+  }
+  .burger {
+    position: fixed;
+    visibility: visible;
+    right: 7%;
+    z-index: 50000;
+    &:hover {
+      background-color: $color_hover;
+    }
+  }
+  #nav_toogle:checked + .burger > .burger_line:first-child {
+    transform-origin: 85% 0;
+    transform: rotate(-45deg);
+    width: 43px;
+    margin-right: 7px;
+  }
+  #nav_toogle:checked + .burger > .burger_line:nth-child(2) {
+    display: none;
+  }
+  #nav_toogle:checked + .burger > .burger_line:nth-child(3) {
+    transform-origin: 85% 0;
+    transform: rotate(45deg);
+    width: 43px;
+
+    margin-right: 7px;
+  }
+  #nav_toogle:checked ~ nav {
+    display: flex;
+  }
+  .header_btn {
+    display: flex;
+    z-index: 40000;
+    margin-right: 200px;
+    &--wrap {
+      margin-top: 6px;
+    }
+  }
+  .info {
+    margin-top: 100px;
+    &_title {
+      font-size: 50px;
+    }
+  }
+  .subtitle {
+    font-size: 30px;
+  }
+  .title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .aboutUs_wrap {
+    display: block;
+  }
+  .aboutUs_wrap > img {
+    float: left;
+    max-width: 450px;
+    max-height: 500px;
+  }
+  .aboutUs_title {
+    font-size: 38px;
+  }
+  .product_price {
+    flex-direction: column;
+  }
+  .old_price {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .new_price {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .stars {
+    margin: 0 auto;
+    max-width: 75px;
+  }
+  .feedback {
+    background-size: auto;
+    &_text {
+      max-width: 600px;
+    }
+    &_stats-info {
+      max-width: 200px;
+      max-height: 200px;
+    }
+    &_stats-title {
+      font-size: 34px;
+    }
+    &_stats-text {
+      font-size: 16px;
+    }
+  }
+
+  .slider_item {
+    max-width: 220px;
+    max-height: 420px;
+  }
+  .farm_info {
+    max-width: 420px;
+    right: 0;
+    margin: 20px 0;
+    padding: 20px 30px 20px 30px;
+  }
+  .footer {
+    &_subscribe_img {
+      width: 100%;
+    }
+    &_title {
+      top: 22%;
+    }
+    &_input {
+      top: 22%;
+      width: 250px;
+    }
+    &_btn {
+      top: 22%;
+    }
+    &_wrap {
+      gap: 30px;
+      margin-left: 0;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 26px;
+    line-height: 50px;
+  }
+  .sub4_title {
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 15px;
+    white-space: nowrap;
+  }
+  .text {
+    line-height: 25px;
+  }
+  .btn {
+    width: 180px;
+    height: 60px;
+    &_text {
+      font-size: 15px;
+      line-height: 20px;
+    }
+  }
+  .header_wrap {
+    margin: 31px 0;
+  }
+  .burger {
+    right: 20%;
+  }
+  .nav > .menu {
+    right: 99px;
+  }
+  .Cards {
+    padding: 80px 0;
+  }
+  .card_title {
+    font-size: 30px;
+  }
+  .card_name {
+    font-size: 13px;
+  }
+  .aboutus {
+    padding: 80px 0;
+  }
+  .aboutUs_wrap {
+    & > img {
+      display: none;
+    }
+  }
+  .aboutUs {
+    align-items: center;
+  }
+  .products {
+    padding: 100px 0;
+    &_cards {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
+  .product_card {
+    padding: 20px;
+  }
+  .product_name {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 13px 0;
+  }
+  .feedback {
+    padding: 100px 0;
+    &_text {
+      font-size: 16px;
+    }
+    &_consumer {
+      margin-bottom: 30px;
+    }
+    &_line {
+      margin-bottom: 75px;
+    }
+    &_stats-info {
+      max-width: 142px;
+      max-height: 142px;
+
+      &::before {
+        width: 150px;
+        height: 150px;
+      }
+    }
+    &_stats-title {
+      font-size: 28px;
+      line-height: 35px;
+    }
+    &_stats-text {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+  .slider {
+    padding: 100px 0;
+    &_item {
+      max-width: 180px;
+      max-height: 350px;
+    }
+    &_carousel_input {
+      width: 30px;
+      height: 30px;
+    }
+    &_arrow {
+      width: 30px;
+      height: 30px;
+      &-right {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &_btn {
+      width: 240px;
+    }
+  }
+  .farm_info {
+    margin-top: 50px;
+  }
+  .choise {
+    padding: 100px 0;
+    &_btn {
+      width: 150px;
+      height: 50px;
+    }
+  }
+  .footer {
+    &_subscribe_img {
+      margin-bottom: 50px;
+    }
+    &_title {
+      font-size: 25px;
+    }
+    &_input {
+      width: 200px;
+      height: 60px;
+      right: 200px;
+      &:placeholder-shown {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    &_btn {
+      width: 180px;
+      height: 60px;
+      font-size: 15px;
+      line-height: 20px;
+      right: 15px;
+    }
+    &_wrap {
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    &_contactUs {
+      & p {
+        font-size: 15px;
+      }
+      & span {
+        font-size: 15px;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &_logo {
+      width: 170px;
+      height: 45px;
+      margin-bottom: 30px;
+    }
+    &_social {
+      & span {
+        font-size: 15px;
+        margin-bottom: 30px;
+      }
+      &_links {
+        margin-bottom: 40px;
+      }
+    }
+    &_list {
+      gap: 15px;
+      & a {
+        font-size: 15px;
+      }
+    }
+    &_utility {
+      width: 180px;
+    }
+  }
+}

@@ -1,0 +1,90 @@
+.header_wrap {
+  margin: 41px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  flex-basis: auto;
+  gap: 43px;
+  margin-left: 120px;
+  &_item {
+    cursor: pointer;
+  }
+  &_item:last-child {
+    margin-left: 20px;
+  }
+  &_link {
+    font-family: $roboto;
+    font-size: 19px;
+    line-height: 32px;
+
+    letter-spacing: 0.36px;
+    text-decoration: none;
+    color: $color_title;
+    &--active {
+      color: $color_yellow;
+    }
+    &:hover {
+      color: $color_hover;
+    }
+  }
+}
+.header_btn {
+  font-family: $roboto;
+  font-size: 17.5px;
+  line-height: 28.8px;
+  color: $color_title;
+  width: 159px;
+  height: 70px;
+  background-color: $bg_color;
+  border: #d4d4d4 1px solid;
+  border-radius: 33px;
+  cursor: pointer;
+  margin-left: auto;
+  transition: all 1s ease;
+  &--wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  &--wrap:first-child {
+    margin-left: 11px;
+  }
+  & img {
+    width: 56px;
+    height: 56px;
+  }
+  &:hover {
+    background-color: $color_hover;
+  }
+}
+.info {
+  position: absolute;
+  margin-top: 220px;
+  max-width: 496px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  &_title {
+    font-family: $roboto;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 84px;
+    color: $color_title;
+  }
+  &_btn {
+    margin-top: 16px;
+    width: 219px;
+    height: 82px;
+    color: $color_title;
+    background-color: $color_btn--yellow;
+    transition: all 1s ease;
+    &:hover {
+      background-color: $color_hover;
+    }
+  }
+}

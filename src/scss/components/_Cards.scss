@@ -1,0 +1,43 @@
+.Cards {
+  padding: 138px 0 131px 0;
+  position: relative;
+  z-index: 200;
+  top: -8px;
+  border-top: 8px #fff solid;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  position: relative;
+  transition: 1s;
+  & img {
+    width: 665px;
+    height: 378px;
+  }
+  &_text {
+    position: absolute;
+    top: 105px;
+    left: 55px;
+    &--white {
+      color: $bg_color;
+    }
+  }
+  &_title {
+    font-family: $roboto;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.36px;
+    color: $bg_color;
+    position: absolute;
+    top: 169px;
+    left: 55px;
+    &--second {
+      color: $color_title;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}
